@@ -38,7 +38,7 @@ see [CONTRIBUTING](CONTRIBUTING.md) for more details.
   Due to the fact that services share some common dependencies,
   all services should be compiled after these dependencies are installed.
   The advantage of a central point of dependencies is that the total size of compiled services is minimized;
-  the disadvante is that it makes deleting a service from Lucida non-trivial -- you have to remove its dependencies in `tools`. 
+  the disadvantage is that it makes deleting a service from Lucida non-trivial -- you have to remove its dependencies in `tools`. 
 
 ## Lucida Local Development
 
@@ -67,7 +67,7 @@ see [CONTRIBUTING](CONTRIBUTING.md) for more details.
   This will spawn a terminal window (`gnome-terminal`) for each service as well as the command center.
   Once they all start running,
   open your browser and visit `http://localhost:3000/`.
-  Check out the [`tutorial`](tutorial.pdf) for usgae and sample questions.
+  Check out the [`tutorial`](tutorial.pdf) for usage and sample questions.
   
   Currently, the command center receives the user input in the form of HTTP requests sent from your browser,
   but in future we can support other forms of input. 
@@ -264,7 +264,7 @@ in order to add your own service into Lucida. Let's break it down into two steps
     the configuration file of the command center. Notice that the starting nodes, YOS0 and YOS1, need to be specified separately,
     so that the command center knows where to send the request(s) to. If more than one starting nodes are specified,
     the command center simply concatenates the results returned from all of them.
-    See step 2 for more detais on how to specify service graphs and starting nodes.
+    See step 2 for more details on how to specify service graphs and starting nodes.
     
     The command center guarantees to send a valid `QuerySpec`,
     but your service is responsible for parsing the graph, further sending the request(s) to other service(s),
